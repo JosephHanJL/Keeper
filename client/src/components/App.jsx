@@ -30,7 +30,7 @@ function onClickPreventDefault(e) {
     async function postData () {
       console.log(firstName);
       //const response = await fetch("http://localhost:3000/api/postData", {
-      const response = await fetch("http://keeper-production.up.railway.app/api/postData", {
+      const response = await fetch("https://keeper-production.up.railway.app/api/postData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -55,7 +55,7 @@ function onClickPreventDefault(e) {
 
    async function deleteNote(id) {
     try {
-      const response = await fetch(`http://keeper-production.up.railway.app/api/deleteData/${id}`, {
+      const response = await fetch(`https://keeper-production.up.railway.app/api/deleteData/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
