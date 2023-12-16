@@ -1,0 +1,15 @@
+Working keeper app that allows posting and deleting of notes, disallows empty notes (either empty title or empty content)
+The backend is hosted on Railway. The front end is not hosted because of issues getting Vercel front end to interact correctly with
+backend hosted on Railway. See Ed Post#72 which is unanswered by the time of submission of the final project.
+To run project, simply cd to client folder and run npm start. The backend is hosted on Railway so no additional command is required.
+The keeper page is initialized to be empty. Adding new notes will cause the notes to stay on the page until deleted. Refreshing does 
+not remove the notes.
+
+----------Checklist------------
+1. Link to github repo: yes
+2. README file: yes
+3. Link of deployed app (preferred but not mandatory): yes and no, backend deployed correctly.
+4. Link to tutorials followed: yes
+5. List of modifications: yes
+6. 2-3 mins video: yes
+7. List of things learned: yes
