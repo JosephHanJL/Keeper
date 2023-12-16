@@ -29,7 +29,8 @@ function onClickPreventDefault(e) {
     e.preventDefault();
     async function postData () {
       console.log(firstName);
-      const response = await fetch("http://localhost:3000/api/postData", {
+      //const response = await fetch("http://localhost:3000/api/postData", {
+      const response = await fetch("http://keeper-production.up.railway.app/api/postData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
