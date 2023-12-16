@@ -55,7 +55,7 @@ function onClickPreventDefault(e) {
 
    async function deleteNote(id) {
     try {
-      const response = await fetch(`http://localhost:3000/api/deleteData/${id}`, {
+      const response = await fetch(`http://keeper-production.up.railway.app/api/deleteData/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
