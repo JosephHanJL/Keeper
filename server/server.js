@@ -1,17 +1,16 @@
 const express = require('express');
 const app = express();
 const cors = require("cors");
-const bodyParser = require('body-parser'); // middleware making object 
+const bodyParser = require('body-parser'); 
 const {MongoClient} = require('mongodb');
 const ObjectId = require('mongodb').ObjectId;
-app.use(cors()); // middleware 
+app.use(cors()); 
 app.use(bodyParser.json());
 const uri = 'mongodb+srv://jihan:GsfcvP8m@final.s9bt10i.mongodb.net/?retryWrites=true&w=majority'
-const client = new MongoClient(uri); // creating instance 
-const db = client.db("keeper"); // referrencing db
+const client = new MongoClient(uri);  
+const db = client.db("keeper");
 async function main(){
     try {
-        // Connect to the MongoDB cluster
         await client.connect();
         app.listen(3000,()=>{console.log("server started on port 3000")});
     } catch (e) {
@@ -49,10 +48,3 @@ app.delete('/api/deleteData/:id', async (req, res) => {
     }
   });
 main().catch(console.error);
-
-
-/*
-1. require packages 
-2. create mongo db connection
-3. create get and post end point
-*/
