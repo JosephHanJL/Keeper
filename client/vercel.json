@@ -2,7 +2,7 @@
     "routes": [
       {
         "src": "/api/(.*)",
-        "dest": "https://your-railway-backend-url.com/api/$1",
+        "dest": "https://keeper-production.up.railway.app/api/$1",
         "headers": {
           "Access-Control-Allow-Origin": "*"
         }
